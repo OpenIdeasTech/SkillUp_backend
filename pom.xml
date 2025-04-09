@@ -13,7 +13,7 @@
 	</parent>
 
 	<groupId>com.openideastech</groupId>
-	<artifactId>openideastech</artifactId>
+	<artifactId>open-ideas-tech</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Open Ideas Tech</name>
 	<description>Demo project for Spring Boot</description>
