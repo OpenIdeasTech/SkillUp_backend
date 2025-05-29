@@ -38,7 +38,7 @@ public class User {
 
   @NotBlank(message = "O número de celular é obrigatório")
   @Pattern(regexp = "\\d{11}", message = "O número de celular deve ter 11 dígitos")
-  @Column(name = "phone_number", nullable = false, unique = true)
+  @Column(name = "phone_number", nullable = false, unique = true, length = 11)
   private String phoneNumber;
 
   @Column(nullable = false, length = 60)
