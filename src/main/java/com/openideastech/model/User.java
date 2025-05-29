@@ -38,21 +38,21 @@ public class User {
 
   @NotBlank(message = "O número de celular é obrigatório")
   @Pattern(regexp = "\\d{11}", message = "O número de celular deve ter 11 dígitos")
-  @Column(name = "phone_number", nullable = false, unique = true, length = 11)
+  @Column(nullable = false, unique = true, length = 11)
   private String phoneNumber;
 
   @Column(nullable = false, length = 60)
   private String passwordHash;
 
-  @Column(name = "terms_accepted", nullable = false)
+  @Column(nullable = false)
   private boolean termsAccepted = false;
 
   @CreatedDate
-  @Column(name = "created_at", nullable = false, updatable = false)
+  @Column(nullable = false, updatable = false)
   private Instant createdAt;
 
   @LastModifiedDate
-  @Column(name = "updated_at", nullable = false)
+  @Column(nullable = false)
   private Instant updatedAt;
 
   @PrePersist
