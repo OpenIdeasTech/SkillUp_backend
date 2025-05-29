@@ -41,7 +41,7 @@ public class UserService {
 
   private void validateUniqueEmail(String email) {
     if (userRepository.existsByEmail(email)) {
-      throw new DuplicateResourceException("Já existe um usuário com este email");
+      throw new DuplicateResourceException("Email já cadastrado");
     }
   }
 
